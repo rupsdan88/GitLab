@@ -1,6 +1,6 @@
-create S3 bucket
+create S3 bucket -->name:- kopsbucket123
 create IAM user and give s3_full_access
-create repository in gitlab -->go to CI/CD setting -->add variable -->AWS_ACCESS_KEY_ID & AWS_SECRET_KEY_ID
+create repository in gitlab -->go to CI/CD setting -->add variable -->S3_BUCKET , AWS_ACCESS_KEY_ID & AWS_SECRET_KEY_ID
 create .gitlab_ci.yml file
   upload to s3:
      image:
