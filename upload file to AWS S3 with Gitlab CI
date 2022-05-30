@@ -1,0 +1,14 @@
+create S3 bucket
+create IAM user and give s3_full_access
+create repository in gitlab -->go to CI/CD setting -->add variable -->AWS_ACCESS_KEY_ID & AWS_SECRET_KEY_ID
+create .gitlab_ci.yml file
+  upload to s3:
+     image:
+          name: banst/awscli
+          entrypoint: [""]
+     script:
+          - aws configure set region ap-south-1
+          - touch foo.txt
+          - aws s3 cp foo.txt s3://$S3_BUCKET/foo.txt
+          
+Then Check s3 bucket foo.txt file has been created or not
