@@ -1,0 +1,9 @@
+Create Project
+Add Registory variables and add dockerhub credentials
+1. CI_REGISTORY    --->docker.io
+2. CI_REGISTORY_IMAGE
+3. CI_REGISTORY_USER
+4. CI_REGISTORY_PASSWORD
+Create Dockerfile
+Create .git_ci_yml file 
+
